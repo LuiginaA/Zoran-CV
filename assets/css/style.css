@@ -3,11 +3,268 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Poppins', sans-serif;
+    /* color: #fff; */
+    list-style: none;
+  
+
 }
 
-body {
+/* ----------  Header CSS ----------*/
+
+#header {
+    height: 100vh;
+    opacity: .8;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.container {
+    width: 100%;
+}
+
+.user-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+ 
+}
+
+.user-box img {
+    border-radius: 50%;
+    width: 250px;
+    border: 5px solid lime;
+   
+}
+
+.user-box h1 {
+    color: lime;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.user-box p {
+    color: lime;
+}
+
+
+/* ----- Media Queries 
+Nav Background Section ----- */
+
+media (max-width: 992px){
+    .user-box {
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%); 
+        position: absolute;
+     
+    }
+}   
+
+/* ----------  User-info CSS ----------*/
+
+#user-info {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-color: blue;
+}
+
+
+
+.nav-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-bar {
+background-color: #a5efb7; 
+background-color: #0b3514;
+}
+
+
+.navbar-toggler-icon  {
+    font-size: 35px;
+    color: #a5efb7;
+    /* color: #035e18; */
+    color: lime !important;
+
+}
+
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+
+.navbar-nav {
+    float: right;
+    text-align: right;
+}
+
+
+.nav-link {
+    color: #035e18 !important;
+    color: #a5efb7 !important;
+    color: lime !important;
+}
+
+/* ----------  About CSS ----------*/
+
+#about {
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #a5efb7;
+    width: 100%;
+ 
+}
+
+.profile-img {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+  
+  
+}
+
+
+.skills-bar  p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+
+
+.progress-bar {
+    border-radius: 16px;
+    background: #035e18 !important;
+}
+
+
+
+
+
+/* ----------  Resume CSS ----------*/
+
+#resume {
+padding-top: 50px;
+margin-bottom: 50px;
+  
+}
+
+
+.resume {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+
+
+.resume h3 {
+     padding-bottom: 50px;
+    
+}
+
+.time-line {
+    list-style-type: none;
+    position: relative;
+   
+}
+
+.time-line:before {
+    content: "";
+    background: #035e18;
+    background: #555;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+   
+}
+
+.time-line li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background:#035e18;
+    background: #fff;
+}
+
+
+.time-line li h4 {
+    background-color: #000;
+    padding: 5px 0 5px 20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.time-line li h4 span {
+    font-weight: bold;
+    color: #ccc;
+    
+}
+
+.time-line li:before {
+    content: "";
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.resume p {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+   
+
+}
+
+/*--------------- Services Section  ---------------*/
+
+
+#services {
+background: aquamarine;
+
+margin-top: 50px;
+}
+
+#services {
+    
+}
+
+
+
+
+/* oooooooooooooooooooooooooooooooo */
+
+
+
+
+
+
+
+
+/* body {
     background: lightblue;
     display: flex;
     justify-content: center;
@@ -15,6 +272,7 @@ body {
     min-height: 100vh;
 
 }
+
 
 
 .container {
@@ -28,17 +286,17 @@ body {
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1) ;
 
-}
+} */
 
 
-.container .left_Side {
+/* .container .left_Side {
     position: relative;
     background: #003147;
     padding: 40px;
 
-}
+} */
 
-
+/* 
 .profileText {
     position: relative;
     display: flex;
@@ -46,19 +304,19 @@ body {
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
-}
+} */
 
 
-.profileText .imgBx {
+/* .profileText .imgBx {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
    
-}
+} */
 
-.profileText .imgBx img {
+/* .profileText .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,10 +324,10 @@ body {
     height: 100%;
     object-fit: cover;
 
-}
+} */
 
 
-.profileText h2 {
+/* .profileText h2 {
     color: #fff;
     font-size: 1.5em ;
     margin-top: 20px;
@@ -77,52 +335,52 @@ body {
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
-}
+} */
 
-.profileText h2 span{
+/* .profileText h2 span{
     font-size: 0.8em;
     font-weight: 300;
-}
+} */
 
 
-.contactInfo {
+/* .contactInfo {
     padding-top: 40px;
-}
+} */
 
-.title {
+/* .title {
       color: #fff;  
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 1px;
       margin-bottom: 20px;
-}
+} */
 
 
-.contactInfo ul {
+/* .contactInfo ul {
     position: relative;
-}
+} */
 
-.contactInfo ul li {
+/* .contactInfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
-}
+} */
 
-.contactInfo ul li .icon {
+/* .contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
 
-}
+} */
 
-.contactInfo ul li span {
+/* .contactInfo ul li span {
     color: #fff; 
     font-weight: 300;
    
-}
-
+} */
+/* 
 .contactInfo.education li {
     margin-bottom: 15px;
 }
@@ -140,10 +398,10 @@ body {
 .contactInfo.education h4 {
     color: #fff;
     font-weight: 300;
-}
+} */
 
 
-.contactInfo.language .percent {
+/* .contactInfo .language .percent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -151,23 +409,43 @@ body {
     display: block;
     margin-top: 5px;
   
-}
+} */
 
-.contactInfo.language .percent div{
+/* .contactInfo.language .percent div{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
   
+} */
+
+/* 
+.contactInfo .language  ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
+    
+.contactInfo .language  ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+    }
+    
+.contactInfo .language  ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    }
+
+
 
 .container .right_Side {
     position: relative;
     background: #fff;
     padding: 40px;
 }
-
 
 .about {
     margin-bottom: 50px;
@@ -207,9 +485,9 @@ p {
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
-}
+} */
 
-.skills .box {
+/* .skills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -242,6 +520,27 @@ p {
  
 }
 
+.language  ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.language  ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.language  ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 15px;
+} */
+
+
+
+/* 
 .interest  ul {
 display: grid;
 grid-template-columns: repeat(4,1fr);
@@ -273,6 +572,11 @@ grid-template-columns: repeat(4,1fr);
         margin-bottom: 5px;
     }
 
+    .language  ul {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
 
     .interest  ul {
         display: grid;
@@ -288,7 +592,7 @@ grid-template-columns: repeat(4,1fr);
 
 
 }
-
+ */
 
 
 
