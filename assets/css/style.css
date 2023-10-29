@@ -239,18 +239,87 @@ margin-bottom: 50px;
 
 }
 
-/*--------------- Services Section  ---------------*/
-
+/* ----------  Services CSS ----------*/
 
 #services {
-background: aquamarine;
 
-margin-top: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+
 }
 
-#services {
+.services h1 {
+    margin-bottom: 15px;
+ 
+}
+
+
+.services-box {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    }
+
+    .services-box .fa {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .services-box span {
+        margin: 3px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .services-box p {
+        margin-top: 20px;
+        margin-left: 65px;
+        font-size: 15px;
+        color: #777;
+    }
+
+
+    .services-box:hover {
+        background: #000;
+        background: #333;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .services-box:hover {
+        color: #fff;
+        color: #a5efb7;
+    }
+
+/* ----------  Contact CSS ----------*/
+ 
+#contact {
+
+    padding-top: 50px;
+    opacity: .8;
+
+   
+}
+
+#contact img {
+    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+    .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
     
 }
+
+
 
 
 
