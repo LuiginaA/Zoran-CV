@@ -7,8 +7,8 @@
     font-family: 'Poppins', sans-serif; 
     list-style: none;
     color: #fff;
-    color: lime;
-    background-color: #555;
+    color: #00ff00;
+    background-color: #;
 
 }
 
@@ -28,8 +28,8 @@
 .containerNav::before {
     content: "";
     position: absolute;
-    height: 60px;
-    width: 60px; 
+    height: 130px;
+    width: 130px; 
     border-radius: 50%;
     background: linear-gradient(#08ffe6, #fcd200); 
     transform: translate(-490px,-150px); 
@@ -38,8 +38,8 @@
 .containerNav::after {
     content: "";
     position: absolute;
-    height: 80px;
-    width: 80px; 
+    height: 100px;
+    width: 100px; 
     border-radius: 50%;
     background: linear-gradient(#fcd200, #fc002e); 
     transform: translate(490px,170px); 
@@ -75,7 +75,7 @@
 .containerNav .headerbox {
     height: 86vh;
     width: 75%;
-    padding: 0 20px;
+    padding: 0,20px;
     background: rgba(255,255,255,0.1);
     z-index: 10;
     display: flex;
@@ -86,41 +86,50 @@
     box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
 }
 
-.containerNav .headerbox nav {
+.containerNav .headerbox .navbar {
     height: 7%;
     width: 95%;
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 15px auto;
     padding: 20px;
 }
 
-.containerNav .headerbox nav ul li {
-    display: inline-block;
-    padding: 0 20px;
-}
 
-.containerNav .headerbox nav ul li a {
+
+.containerNav .headerbox .navbar ul li {
+    width: 100%;
+    display: inline-block;
+    padding: 0 90px;
+    justify-content: right;
+    
+} 
+
+.containerNav .headerbox .navbar ul li a {
     font-size: 13px;
     cursor: pointer;
-}
+    color: #00ff00;
 
-.containerNav .headerbox nav ul li a:hover {
+}
+.containerNav .headerbox .navbar ul li a:hover {
     color: #fff;
+} 
+
+.containerNav .headerbox .navbar .logo {
+    font-size: 35px;
+    color: #000;
+    color: #00ff00;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
-
-/* .containerNav .headerbox nav .logo {
-font-size: 35px;
-color: #000;
-margin-top: 10px;
-margin-left: 20px;
-} */
 
 .containerNav .headerbox .contains {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     width: 100%;
     height: 80%;
@@ -131,40 +140,48 @@ margin-left: 20px;
 
 .containerNav .headerbox .contains .section-1 {
     position: absolute;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .containerNav .headerbox .contains .section-1 h1 {
-    font-size: 45px;     
+    font-size: 45px; 
+    /* font-size: 75px; */
+    color: #000;
+    color: #00ff00;
+    
 }
 
 .containerNav .headerbox .contains .section-1 h3 {
     font-size: 26px;
-    text-align: center;    
+    /* font-size: 36px;  */
+    text-align: center;
+    color: #000; 
+    color: #00ff00;
+    padding-top: 5px;   
 }
 
-.containerNav .headerbox .contains .section-1 p {
+/* .containerNav .headerbox .contains .section-1 p {
     color: #a5efb7;
     margin-top: 220px; 
     text-align: center;    
-}
+} */
 
-.containerNav .headerbox .contains .section-1 .button {
+/* .containerNav .headerbox .contains .section-1 .button {
     margin-top: 50px;      
-}
+}  */
 
 /* .containerNav .headerbox .contains .section-1 .button a{
     padding: 10px 20px;
     border: 1px solid #fff;
     cursor: pointer;    
-}
-
-.containerNav .headerbox .contains .section-1 .button a:hover{
-    background: #fff;
-    color: #000;       
 } */
 
-.containerNav .headerbox .contains .section-2 img{
+/* .containerNav .headerbox .contains .section-1 .button a:hover{
+    background: #fff;
+    color: #000;       
+}  */
+
+.containerNav .headerbox .contains .section-2 img {
 width: 600px; 
 height: auto;
 opacity: .5;
@@ -179,14 +196,14 @@ border-radius: 25px;
      */
 
 /* ----------  Header CSS ----------*/
-/* 
+/*  
 #header {
     height: 100vh;
     opacity: .8;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;   
-}
+} 
 
 .container {
     width: 100%;
@@ -195,16 +212,16 @@ border-radius: 25px;
 .user-box {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(0%, 20%); 
     position: absolute;
  
 }
 
 .user-box img {
-    border-radius: 50%;
-    width: 250px;
+    border-radius: 5%;
+    width: 550px;
     border: 5px solid lime;
-   
+
 }
 
 .user-box h1 {
@@ -215,21 +232,53 @@ border-radius: 25px;
 
 .user-box p {
     color: lime;
-} */
+}  */
 
 
 /* ----- Media Queries 
 Nav Background Section ----- */
 
-/* media (max-width: 992px){
-    .user-box {
+@media (max-width: 992px){
+    
+    .containerNav {
+        width: 90%;
+    }
+
+    .containerNav .headerbox {
         top: 50%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%); 
         position: absolute;
      
-    } */
+    } 
+
+    .containerNav .headerbox .navbar {
+        height: 4%;
+        margin: 5px auto;
+        transform: translateY(-50% ); 
+    }
+    
+    .containerNav .headerbox .contains .section-2 img {
+        display: none;
+    }
+
 }   
+
+
+
+media (max-width: 1200px){
+    
+    .containerNav {
+      width: 90%;
+    }
+
+    .containerNav .headerbox .contains .section-2 img {
+        width: 600px;
+        transform: translateY(150% );
+    
+       
+    } 
+
 
 /* ----------  User-info CSS ----------*/
 /* 
@@ -238,60 +287,37 @@ Nav Background Section ----- */
     background-position: center;
     background-size: cover;
     background-attachment: fixed; 
-    background-color: blue;
-}
+
+} */
 
 
-
-.nav-bar {
+/* 
+.navbar {
     top: 0;
     position: fixed;
     width: 100%;
-    z-index: 2;
-}
-
-.nav-bar {
-background-color: #a5efb7; 
-background-color: #0b3514;
-}
-
-
-.navbar-toggler-icon  {
-    font-size: 35px;
-    color: #a5efb7;
-    /* color: #035e18; */
-    color: lime !important;
-
-}
-
-
-.navbar-toggler {
-    outline: none !important;
-}
-
-
-.navbar-nav {
-    float: right;
-    text-align: right;
-}
-
-
-.nav-link {
-    color: #035e18 !important;
-    color: #a5efb7 !important;
-    color: lime !important;
+    z-index: -2;
 } */
+
+/* .nav-bar {
+background-color: #a5efb7;  */
+/* background-color: #0b3514; */
+}
+
 
 /* ----------  About CSS ----------*/
 
 #about {
-    margin-top: 150px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    background-color: #a5efb7;
-    background-color: #555;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: #02270c;
+    /* background-color: #555; */
+    background-color: #000;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
  
 }
 
@@ -303,9 +329,12 @@ background-color: #0b3514;
   
   
 }
-
+.who h3 {
+    margin-top: 80px;
+}
 
 .skills-bar  p {
+  
     margin-bottom: 6px;
     font-weight: 600;
 }
@@ -329,8 +358,8 @@ background-color: #0b3514;
 /* ----------  Resume CSS ----------*/
 
 #resume {
-padding-top: 50px;
-margin-bottom: 50px;
+padding-top: 0px;
+margin-bottom: 0px;
   
 }
 
@@ -339,6 +368,7 @@ margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 30px;
     background: #fff;
+    background: #000; 
 }
 
 
@@ -353,10 +383,11 @@ margin-bottom: 50px;
    
 }
 
+
+
 .time-line:before {
     content: "";
-    background: #035e18;
-    background: #555;
+    background: #00ff00; 
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -369,32 +400,43 @@ margin-bottom: 50px;
 .time-line li {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    background:#035e18;
-    background: #fff;
+    margin-left: 0px;
+    /* background:#035e18;
+    background: #fff;  */
+    
 }
 
 
+
 .time-line li h4 {
-    background-color: #000;
+
+    /* background-color: #000;
+    background-color: #02270c; */
+    background-color: #035e18;
+
     padding: 5px 0 5px 20px;
     color: #fff;
+    color: #00ff00;
     font-size: 15px;
 }
 
 .time-line li h4 span {
     font-weight: bold;
     color: #ccc;
+   
+
     
 }
 
 .time-line li:before {
     content: "";
     background: #fff;
+    background: #00ff00;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
     border: 3px solid #000;
+    border: 3px solid #02270c;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -411,9 +453,10 @@ margin-bottom: 50px;
 /* ----------  Services CSS ----------*/
 
 #services {
-
+margin-top: 0;
 padding-top: 50px;
 padding-bottom: 50px;
+background: #000;
 
 }
 
@@ -434,11 +477,12 @@ padding-bottom: 50px;
     .services-box .fa {
         margin: 0 10px;
         font-size: 20px;
+        
     }
 
-    .services-box span {
-        margin: 3px;
-        font-size: 20px;
+    .services-box h6 {
+        margin: 0 10px;
+        font-size: 16px;
         font-weight: bold;
     }
 
